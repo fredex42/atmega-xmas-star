@@ -1,0 +1,3 @@
+attiny13.pdf filter=lfs diff=lfs merge=lfs -text
+attiny441.pdf filter=lfs diff=lfs merge=lfs -text
+ATmega48P_88P_168P-DS40002065A.pdf filter=lfs diff=lfs merge=lfs -text
