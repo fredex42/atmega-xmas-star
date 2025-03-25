@@ -8,8 +8,8 @@
 void setup_timer() 
 {
     TCCR2A = 0x0;
-    TCCR2B = CS00;  //set CS00 => drive from clock, no prescaler  
-    TIMSK2 = TOIE0; //set TOIE0 => enable overflow interrupt
+    TCCR2B = 1<<CS00;  //set CS00 => drive from clock, no prescaler  
+    TIMSK2 = 1<<TOIE0; //set TOIE0 => enable overflow interrupt
 }
 
 //Interrupt handler for the timer. This should get called every 256 clock cycles.
